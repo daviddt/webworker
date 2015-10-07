@@ -1,0 +1,42 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	padding: 0;
+	margin: 0;
+}
+
+.block {
+	position: fixed;
+	top: 50%;
+	height: 100px;
+	width: 100px;
+	background: red;
+	margin-top: -50px;
+	left: 0;
+	animation: floating 2s infinite;
+}
+
+.calculate {
+	text-align: center;
+	padding: 20px;
+}
+
+	.calculate button {
+		-webkit-appearance: none;
+		padding: 10px 20px;
+		margin-top: 10px;
+	}
+
+@-webkit-keyframes floating {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: calc(100% - 100px);
+	}
+	100% {
+		left: 0;
+	}
+}
